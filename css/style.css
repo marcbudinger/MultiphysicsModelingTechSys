@@ -22,6 +22,7 @@
   min-height: 150px;
   background-color: white;
   border-bottom: 1px dotted #ddd;
+text-align:center;
 }
 
 .post-area a:link, .post-area a:visited {
@@ -31,4 +32,22 @@
 
 .post-area a:hover {
   color: #0D0017;
+   }
+
+.post-area:hover {
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+
+.post-description{
+font-size:20px;
+margin-top:5px;
+}
+
+.post h4 {
+margin-top : 30px;
+}
+.post h1 {
+    text-align: center;
 }

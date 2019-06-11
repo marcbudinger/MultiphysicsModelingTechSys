@@ -1,6 +1,7 @@
 
 exclude:
   - "/vendor/"
+  - "/notebooks/"
   - "Gemfile"
   - "Gemfile.lock"
   - "README.md"
@@ -16,22 +17,24 @@ keep_files:
 # Site settings
 title: Airspace
 subtitle: "A free HTML5 agency template"
-url: "http://ndrewtl.github.io" # the base hostname & protocol for your site
+url: "http://fantomos.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: "/airspace-jekyll"
+baseurl: "/livre"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
-
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
-
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
-
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+    
+collections:
+  chapitres:
+    output: true
+    
+defaults:
+  - scope:
+      path: ""
+      type: "chapitres"
+    values:
+      layout: chapspage
+      
+      

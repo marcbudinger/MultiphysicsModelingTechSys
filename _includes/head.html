@@ -24,10 +24,19 @@
 <script src="{{ site.baseurl }}/js/plugins.js"></script>
 <script src="{{ site.baseurl }}/js/min/waypoints.min.js"></script>
 <script src="{{ site.baseurl }}/js/jquery.counterup.js"></script>
-
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  },
+   messageStyle: "none"
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
 
 <script src="{{ site.baseurl }}/js/main.js"></script>
-
 <!--
 /*
  * Airspace

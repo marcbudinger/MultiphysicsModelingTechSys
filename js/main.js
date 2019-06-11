@@ -46,8 +46,35 @@ $(document).ready(function(){
     });
 
 
-});
+}
 
 
+);
 
+
+function fixLink(siteurl) {
+	var imgtag = document.getElementsByTagName("img");
+	for(var i =0; i< imgtag.length;i++)
+	{
+		if(imgtag[i].src.includes(siteurl)){
+			  var filename = imgtag[i].src.replace(/^.*[\\\/]/, '');
+			  imgtag[i].src = siteurl + "/img/"+filename;
+		}
+	
+	}
+	var linktag = document.getElementsByTagName("a");
+	for(var i =0; i< linktag.length;i++)
+	{
+		if(linktag[i].href.includes(".",linktag[i].href.indexOf(siteurl)+ siteurl.length) && linktag[i].href.includes(siteurl)){
+			var filename = linktag[i].href.replace(/^.*[\\\/]/, '');
+			if((linktag[i].href.includes(siteurl + "/chapitres/"+filename))){
+				linktag[i].href = linktag[i].href.replace(".ipynb",".html");
+			}
+			else {
+				linktag[i].href = siteurl + "/files/"+filename;
+			}
+		}
+		
+	}
+}
 
