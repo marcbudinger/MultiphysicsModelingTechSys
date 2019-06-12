@@ -22,7 +22,6 @@ url: "http://fantomos.github.io" # the base hostname & protocol for your site
 baseurl: "/airspace-jekyll"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
-
 # Build settings
 markdown: kramdown
     
@@ -37,4 +36,4 @@ defaults:
     values:
       layout: chapspage
       
-      
+
