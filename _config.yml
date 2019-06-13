@@ -55,3 +55,6 @@ defaults:
       path: "fr"
     values:
       lang: "fr"
+
+plugins:
+  - jekyll-redirect-from

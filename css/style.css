@@ -30,20 +30,6 @@ text-align:center;
   color: #333;
 }
 
-/* .post-area a:hover {
-  color: #0D0017;
-   } */
-
-/* .post-area:hover {
-    background-color: #F5F5F5;
-    cursor: pointer;
-} */
-
-
-/*.post-description{
-font-size:20px;
-margin-top:5px;
-}*/
 
 .post-description{
 padding: 25px;
@@ -96,4 +82,25 @@ margin-top : 30px;
 
 .col-md-5.col-sm-12 {
     margin-top: 50px;
+}
+.collapsible{
+	    background: none;
+    border: none;
+	    float: right;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsibleALL{
+	background: none;
+    border: none;
+    float: right;
+    font-size: 25px;
+	padding-right:20px;
+	color:black;
+    font-weight: bold;
 }

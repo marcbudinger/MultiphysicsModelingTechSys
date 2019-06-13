@@ -23,5 +23,27 @@
       </div>
     </div>
   </div>
-  <script> fixLink("{{site.baseurl}}");</script>
+  <script> fixLink("{{site.baseurl}}");
+  
+    var coll = document.getElementsByTagName("h2");
+var i;
+
+for (i = 0; i < coll.length; i++) { 
+
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+	
+	var content = this.nextElementSibling ;
+	var button =  this.lastChild;
+   if (content.style.maxHeight){
+      content.style.maxHeight = null;
+	  button.innerHTML = "+";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+	  	 button.innerHTML = "−";
+    } 
+   
+  });
+}
+  </script>
 </footer>
