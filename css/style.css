@@ -17,11 +17,11 @@
  }
 
 .post-area {
-  padding: 40px;
+  padding: 40px 40px 40px 40px;
   width: 100%;
   min-height: 150px;
   background-color: white;
-  border-bottom: 1px dotted #ddd;
+
 text-align:center;
 }
 
@@ -30,20 +30,54 @@ text-align:center;
   color: #333;
 }
 
-.post-area a:hover {
+/* .post-area a:hover {
   color: #0D0017;
-   }
+   } */
 
-.post-area:hover {
+/* .post-area:hover {
     background-color: #F5F5F5;
     cursor: pointer;
-}
+} */
 
 
-.post-description{
+/*.post-description{
 font-size:20px;
 margin-top:5px;
+}*/
+
+.post-description{
+padding: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+	    margin: 0;
+		    background: #F5F5F5;
+      border: 1px solid #919191;
 }
+.case{
+ height: 60px;
+           border: 1px solid #919191;
+		    border-top: none;
+			flex: auto;
+}
+.case:hover{
+	background-color: #F5F5F5;
+    cursor: pointer;
+	font-weight: bold;
+}
+.post-area a:link, .post-area a:visited {
+	font-size:20px;
+}
+
+.cont-case{
+	   line-height: 60px;
+	      flex: auto;
+		  display: flex;
+		  flex-direction: row;
+	
+}
+
+
 
 .post h4 {
 margin-top : 30px;
@@ -54,4 +88,12 @@ margin-top : 30px;
 #accueil-img{
     display: block;
     margin-left: auto;
+}
+#intro {
+    padding: 50px 0;
+
+}
+
+.col-md-5.col-sm-12 {
+    margin-top: 50px;
 }

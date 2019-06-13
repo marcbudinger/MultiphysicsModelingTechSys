@@ -1,0 +1,40 @@
+---
+layout: page
+title: Corrections
+permalink: /en/corrections/
+---
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+           <h1 class="animated fadeInUp">ALL CORRECTIONS</h1>
+          <p class="animated fadeInUp">Exercices and problems</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% assign i = 0 %}
+{% for chapitre in site.correctionsen %}
+{% if i == 0 %}
+	<div class="post-area">
+	<p class ="post-description">
+		{% assign my_array = chapitre.content | split: "</h1>" %}
+		{{my_array.first | strip_html }}
+	</p>
+	<div class="cont-case"">
+	<div class="case" onclick="location.href='{{ chapitre.url | prepend: site.baseurl }}'">
+	<a href="{{ chapitre.url | prepend: site.baseurl }}">Exercices</a>
+	</div>
+{% assign i = 1 %}
+{% else %} 
+	<div class="case" onclick="location.href='{{ chapitre.url | prepend: site.baseurl }}'">
+	<a href="{{ chapitre.url | prepend: site.baseurl }}">Problems</a>
+	</div>
+	</div>
+	</div>
+{% assign i = 0 %}	
+{% endif %} 
+{% endfor %}

@@ -65,7 +65,7 @@ function fixLink(siteurl) {
 	var linktag = document.getElementsByTagName("a");
 	for(var i =0; i< linktag.length;i++)
 	{
-		if(linktag[i].href.includes(".",linktag[i].href.indexOf(siteurl)+ siteurl.length) && linktag[i].href.includes(siteurl)){
+		if(linktag[i].href.includes(".",linktag[i].href.indexOf(siteurl)+ siteurl.length) && linktag[i].href.includes(siteurl) &&  !linktag[i].href.includes("html")){
 			var filename = linktag[i].href.replace(/^.*[\\\/]/, '');
 			if((linktag[i].href.includes(siteurl + "/chapitres/"+filename))){
 				linktag[i].href = linktag[i].href.replace(".ipynb",".html");

@@ -26,14 +26,32 @@ logo: "/assets/logo.png"
 markdown: kramdown
     
 collections:
-  chapitres:
-    output: true
-    
+  correctionsen:
+       output: true
+  correctionsfr:
+       output: true
+
 defaults:
   - scope:
       path: ""
-      type: "chapitres"
+      type: "correctionsen"
     values:
+      lang: "en"
       layout: chapspage
       
-
+  - scope:
+      path: ""
+      type: "correctionsfr"
+    values:
+      lang: "fr"
+      layout: chapspage
+      
+  - scope:
+      path: ""
+    values:
+      lang: "en"
+      
+  - scope:
+      path: "fr"
+    values:
+      lang: "fr"

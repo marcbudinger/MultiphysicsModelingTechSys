@@ -5,12 +5,18 @@
       <div class="col-md-12">
         <div class="footer-manu">
           <ul>
-		   <li><a href="{{ site.baseurl }}/">Home</a></li>
-		    <li><a href="{{ site.baseurl }}/chapitres">Contents</a></li>
-			 <li><a href="{{ site.baseurl }}/chapitres">Authors</a></li>
-		   <li><a href="{{ site.baseurl }}/chapitres">Exercices</a></li>
-    
-           
+		  {% if page.lang == "en" %}
+		   <li><a href="{{ site.baseurl }}/{{page.lang}}/">Home</a></li>
+		    <li><a href="{{ site.baseurl }}/{{page.lang}}/contents">Contents</a></li>
+			 <li><a href="{{ site.baseurl }}/{{page.lang}}/authors">Authors</a></li>
+		   <li><a href="{{ site.baseurl }}/{{page.lang}}/corrections">Corrections</a></li>
+			{% endif %}
+           {% if page.lang == "fr" %}
+		      <li><a href="{{ site.baseurl }}/{{page.lang}}/">Accueil</a></li>
+		    <li><a href="{{ site.baseurl }}/{{page.lang}}/contents">Contenus</a></li>
+			 <li><a href="{{ site.baseurl }}/{{page.lang}}/authors">Auteurs</a></li>
+		   <li><a href="{{ site.baseurl }}/{{page.lang}}/corrections">Corrections</a></li>
+		   {% endif %}
           </ul>
         </div>
         <p>Copyright &copy; Design &amp; Developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
