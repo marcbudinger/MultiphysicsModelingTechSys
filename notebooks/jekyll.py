@@ -13,7 +13,7 @@ def path2url(path):
     return '{{ site.baseurl }}/img/' + os.path.basename(path)
 	
 
-pathmd = "../_chapitres/"
+pathmd = "../correctionsfr/"
 
 
 #Liste des notebooks sauf index.ipynb
