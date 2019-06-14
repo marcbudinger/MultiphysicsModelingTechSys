@@ -29,5 +29,10 @@ layout: page
   </section>
 </div>
 <p class="center-text" style="padding: 30px;">
+{% if page.lang == "en" %}
+<a href="{{ site.baseurl }}/{{ page.lang }}/corrections">Back to corrections</a>
+{% endif %}
+{% if page.lang == "fr" %}	
   <a href="{{ site.baseurl }}/{{ page.lang }}/corrections">Retour aux corrections</a>
+{% endif %}
 </p>
