@@ -19,7 +19,7 @@ permalink: /en/corrections/
 {% assign i = 0 %}
 {% for chapitre in site.correctionsen %}
 {% if i == 0 %}
-	<div class="post-area">
+	<div class="post-area" >
 	<p class ="post-description">
 		{% assign my_array = chapitre.content | split: "</h1>" %}
 		{{my_array.first | strip_html }}

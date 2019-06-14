@@ -73,7 +73,9 @@ margin-top : 30px;
 }
 #accueil-img{
     display: block;
-    margin-left: auto;
+       margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 #intro {
     padding: 50px 0;
@@ -106,5 +108,5 @@ margin-top : 30px;
 }
 .photo{
     padding-top: 40px;
-width:80%;
+	width:80%;
 }

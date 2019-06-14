@@ -67,7 +67,7 @@ function fixLink(siteurl) {
 	{
 		if(linktag[i].href.includes(".",linktag[i].href.indexOf(siteurl)+ siteurl.length) && linktag[i].href.includes(siteurl) &&  !linktag[i].href.includes("html")){
 			var filename = linktag[i].href.replace(/^.*[\\\/]/, '');
-			if((linktag[i].href.includes(siteurl + "/chapitres/"+filename))){
+			if((linktag[i].href.includes(siteurl + "/correctionsen/"+filename) || linktag[i].href.includes(siteurl + "/correctionsfr/"+filename))){
 				linktag[i].href = linktag[i].href.replace(".ipynb",".html");
 			}
 			else {
