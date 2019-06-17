@@ -17,13 +17,12 @@
  }
 
 .post-area {
-  padding: 40px 40px 40px 40px;
-  width: 100%;
+  padding: 40px 0 40px 0;
   min-height: 150px;
   background-color: white;
-
-text-align:center;
+	text-align:center;
 }
+
 
 .post-area a:link, .post-area a:visited {
   font-size: 30px;
