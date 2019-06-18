@@ -24,13 +24,29 @@
     </div>
   </div>
   <script> fixLink("{{site.baseurl}}");
-  
-    var coll = document.getElementsByClassName("expand");
-var i;
 
-for (i = 0; i < coll.length; i++) { 
 
-  coll[i].addEventListener("click", function() {
+
+var coll = document.getElementsByClassName("expand");
+
+
+
+for (var i = 0; i < coll.length; i++) { 
+	var button = document.createElement("button");
+	button.innerHTML = "+";
+	button.className = "collapsible";
+	coll[i].appendChild(button);
+	
+	var content = document.createElement('div');
+	content.className = "content";
+	coll[i].parentNode.insertBefore(content,coll[i].nextSibling);
+	var elmt = content.nextElementSibling;
+	while(elmt != null && elmt.tagName != "H2"){
+		content.appendChild(elmt);
+		elmt =  content.nextElementSibling;
+	}
+	
+	coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
 	
 	var content = this.nextElementSibling ;
