@@ -5,7 +5,7 @@ title: Chapitre 1. Exercices
   
  
 ## 5.1. Révision des lois de Kirchhoff en modélisation multi-domaine
-
+{: .expand}
 
 #### 1)	Sur quelles grandeurs applique-t-on les lois des nœuds ?
 La force $F$, le moment $T$, le courant $i$ , le flux $\dot{Q}$   
@@ -56,7 +56,7 @@ Les variables d’énergie sont les grandeurs primitives des variables de puissa
 
  
 ## 5.2.	Questions sur l’exemple du lève vitre 
-
+{: .expand}
 
 #### Ressources à télécharger : Modèle de simulation d'un lève vitre
 
@@ -86,7 +86,7 @@ Les effets transformateurs sont les suivants:
 
 
 ## 5.3.	Questions à choix multiples sur la modélisation de composants technologiques
-
+{: .expand}
 
 #### 1) Faites le lien entre les effets et les différents éléments du schéma :
 
