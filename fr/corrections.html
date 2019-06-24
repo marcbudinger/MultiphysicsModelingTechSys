@@ -25,7 +25,7 @@ permalink: /fr/corrections/
 		{% assign my_array = chapitre.content | split: "</h1>" %}
 		{{my_array.first | strip_html }}
 	</p>
-	<div class="cont-case"">
+	<div class="cont-case">
 	<div class="case cleft" onclick="location.href='{{ chapitre.url | prepend: site.baseurl }}'">
 	<a href="{{ chapitre.url | prepend: site.baseurl }}">Exercices</a>
 	</div>
@@ -34,9 +34,11 @@ permalink: /fr/corrections/
 	<div class="case" onclick="location.href='{{ chapitre.url | prepend: site.baseurl }}'">
 	<a href="{{ chapitre.url | prepend: site.baseurl }}">Problèmes</a>
 	</div>
-	</div>
+	
 	</div>
 	<div class="divider"></div>
+	</div>
+	
 {% assign i = 0 %}	
 {% endif %} 
 {% endfor %}
