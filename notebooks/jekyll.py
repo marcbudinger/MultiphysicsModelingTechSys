@@ -7,13 +7,13 @@ from os.path import splitext
 from os import walk
 import os
 import sys
-
+import shutil
 
 def path2url(path):
     return '{{ site.baseurl }}/img/' + os.path.basename(path)
 	
 
-pathmd = "../correctionsfr/"
+pathmd = "chapitres/"
 
 
 #Liste des notebooks sauf index.ipynb
@@ -35,7 +35,7 @@ c.FilesWriter.build_directory = pathmd
 c.NbConvertApp.notebooks = nbtoconvert
 
 
-#Supression des .md sans notebooks			 
+#Supression des .md sans notebooks		 
 _, _, dir1 = next(walk(pathmd), (None, None, []))
 _, _, dir2 = next(walk('.'), (None, None, []))
 documents = set([splitext(filename)[0] for filename in dir2])
@@ -47,4 +47,28 @@ for file in diff:
 		print ("Supression du fichier : "+file)
 	except OSError as e: 
 		print ("Erreur: %s - %s." % (e.filename, e.strerror))
+	
+	
+_, _, dir3 = next(walk("../_correctionsfr"), (None, None, []))	
+for file in dir3:  
+	try:
+		os.remove("../_correctionsfr/" + file)
+		print ("Supression du fichier : "+file)
+	except OSError as e: 
+		print ("Erreur: %s - %s." % (e.filename, e.strerror))
+		
+_, _, dir4 = next(walk("../_correctionsen"), (None, None, []))	
+for file in dir4:  
+	try:
+		os.remove("../_correctionsen/" + file)
+		print ("Supression du fichier : "+file)
+	except OSError as e: 
+		print ("Erreur: %s - %s." % (e.filename, e.strerror))
+
+#Déplacement dans dossier correspondant
+for file in dir1:
+    if "Chapitre" in file:
+        shutil.move("chapitres/"+file,"../_correctionsfr/")
+    elif "Chapiter" in file:
+        shutil.move("chapitres/"+file,"../_correctionsen/")
 		
