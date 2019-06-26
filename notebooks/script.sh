@@ -4,6 +4,10 @@ jupyter nbconvert --config jekyll
 echo 
 echo "Conversion terminée"
 echo 
+python move.py
+echo
+echo "Déplacement terminée"
+echo 
 
 if command -v git  &>/dev/null; then
 	read -r -p "Actualiser le dépôt? [y/N] " response

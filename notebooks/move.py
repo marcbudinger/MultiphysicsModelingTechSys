@@ -11,4 +11,4 @@ for file in dir1:
         shutil.move("chapitres/"+file,"../_correctionsfr/")
     elif "Chapter" in file:
         shutil.move("chapitres/"+file,"../_correctionsen/")
-
+    print("Déplacement de : "+file)
