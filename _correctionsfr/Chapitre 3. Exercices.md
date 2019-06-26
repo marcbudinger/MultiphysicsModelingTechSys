@@ -47,7 +47,6 @@ k_C &= k_E
 #### 2) Compléter le tableau ci-dessous en indiquant les composants et les équations correspondantes des deux dispositifs suivants
 
 <img src="../img/chap2_correction_5.1.2.png" alt="chap2_correction_5.1.2.png" width="700">
-Nicolas : mettre a jour image avec debit hydraulique Q=S.v 
 
 ## 5.2. Lien géométrie / réseau : analyse d’une direction assistée
 

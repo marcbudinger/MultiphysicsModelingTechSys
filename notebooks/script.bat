@@ -4,6 +4,11 @@ jupyter nbconvert --config jekyll
 echo.
 echo Conversion terminée
 echo.
+python move.py
+echo.
+echo Déplacement terminée
+echo.
+
 WHERE git > nul 2>&1
 IF %ERRORLEVEL% NEQ 0 (
 	ECHO Actualisation automatique impossible : Git non installé. Pensez à  actualiser le dépôt manuellement !

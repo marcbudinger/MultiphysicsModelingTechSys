@@ -16,7 +16,7 @@ def path2url(path):
 pathmd = "chapitres/"
 
 
-#Liste des notebooks sauf index.ipynb
+#Liste des notebooks
 nbtoconvert = []
 for root, dirs, files in os.walk('.'):
     for file in files:
@@ -49,6 +49,7 @@ for file in diff:
 		print ("Erreur: %s - %s." % (e.filename, e.strerror))
 	
 	
+#Supression des anciens notebooks
 _, _, dir3 = next(walk("../_correctionsfr"), (None, None, []))	
 for file in dir3:  
 	try:
@@ -64,11 +65,4 @@ for file in dir4:
 		print ("Supression du fichier : "+file)
 	except OSError as e: 
 		print ("Erreur: %s - %s." % (e.filename, e.strerror))
-
-#Déplacement dans dossier correspondant
-for file in dir1:
-    if "Chapitre" in file:
-        shutil.move("chapitres/"+file,"../_correctionsfr/")
-    elif "Chapter" in file:
-        shutil.move("chapitres/"+file,"../_correctionsen/")
 		
