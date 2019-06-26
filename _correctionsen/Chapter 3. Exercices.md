@@ -1,8 +1,8 @@
 ---
-title: Chapiter 3. Exercices
+title: Chapter 3. Exercices
 description: 
 ---
-# Chapiter 3 : Setting up a lumped parameter model 
+# Chapter 3 : Setting up a lumped parameter model 
   
  
  
@@ -81,4 +81,4 @@ Nicolas : mettre a jour image avec debit hydraulique Q=S.v
 
 
 
-## Next : [Chapiter 3. Problemes](Chapiter 3. Problemes.ipynb)
+## Next : [Chapter 3. Problemes](Chapter 3. Problemes.ipynb)

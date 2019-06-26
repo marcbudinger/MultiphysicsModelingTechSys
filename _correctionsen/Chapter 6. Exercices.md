@@ -1,8 +1,8 @@
 ---
-title: Chapiter 6. Exercices
+title: Chapter 6. Exercices
 description: 
 ---
-# Chapitre 6 : Electromechanical systems modelling using energy approaches
+# Chapter 6 : Electromechanical systems modelling using energy approaches
   
  
  
@@ -256,4 +256,4 @@ Here you will find a Modelica file with the implementation and use of these equa
 
 
 
-## Next : [Chapiter 6. Problemes](Chapiter 6. Problemes.ipynb)
+## Next : [Chapter 6. Problemes](Chapter 6. Problemes.ipynb)

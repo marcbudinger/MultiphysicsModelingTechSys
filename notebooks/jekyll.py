@@ -69,6 +69,6 @@ for file in dir4:
 for file in dir1:
     if "Chapitre" in file:
         shutil.move("chapitres/"+file,"../_correctionsfr/")
-    elif "Chapiter" in file:
+    elif "Chapter" in file:
         shutil.move("chapitres/"+file,"../_correctionsen/")
 		

@@ -1,8 +1,8 @@
 ---
-title: Chapiter 2. Problemes
+title: Chapter 2. Problemes
 description: 
 ---
-# Chapiter 2 : Fundamental Concepts of Multi-Physics Modelling with Lumped Parameters 
+# Chapter 2 : Fundamental Concepts of Multi-Physics Modelling with Lumped Parameters 
   
 
 

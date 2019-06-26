@@ -1,8 +1,8 @@
 ---
-title: Chapiter 3. Exercices
+title: Chapter 3. Exercices
 description: 
 ---
-# Chapiter 3 : Setting up a lumped parameter model 
+# Chapter 3 : Setting up a lumped parameter model 
   
  
  
@@ -47,8 +47,7 @@ k_C &= k_E
 
 #### 2) Complete the table below by indicating the components and corresponding equations of the following two devices
 
-<img src="../img/chap2_correction_5.1.2.png" alt="chap2_correction_5.1.2.png" width="700">
-Nicolas : mettre a jour image avec debit hydraulique Q=S.v 
+<img src="../img/chap2_correction_5.1.2_en.png" alt="chap2_correction_5.1.2_en.png" width="700">
 
 ## 5.2. Geometry / network link : analysis of a power steering system
 
@@ -81,4 +80,4 @@ Nicolas : mettre a jour image avec debit hydraulique Q=S.v
 
 
 
-## Next : [Chapiter 3. Problemes](Chapiter 3. Problemes.ipynb)
+## Next : [Chapter 3. Problemes](Chapter 3. Problemes.ipynb)

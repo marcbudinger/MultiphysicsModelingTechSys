@@ -1,8 +1,8 @@
 ---
-title: Chapiter 2. Exercices
+title: Chapter 2. Exercices
 description: 
 ---
-# Chapiter 2 : Fundamental Concepts of Multi-Physics Modelling with Lumped Parameters   
+# Chapter 2 : Fundamental Concepts of Multi-Physics Modelling with Lumped Parameters   
   
  
 ## 5.1. Review of Kirchhoff's laws in multi-domain modeling
@@ -128,6 +128,6 @@ The weight of the rim could have been taken into account by an additional force 
 
 
 
-## Next : [Chapiter 2. Problemes](Chapiter 2. Problemes.ipynb)
+## Next : [Chapter 2. Problemes](Chapter 2. Problemes.ipynb)
 
  

@@ -1,8 +1,8 @@
 ---
-title: Chapiter 3. Problemes
+title: Chapter 3. Problemes
 description: 
 ---
-# Chapiter 3 : Setting up a lumped parameter model
+# Chapter 3 : Setting up a lumped parameter model
 
 
 ## 6.1.	Thermal response of a TGV engine - Deductive approach

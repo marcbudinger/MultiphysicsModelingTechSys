@@ -1,8 +1,8 @@
 ---
-title: Chapiter 6. Problemes
+title: Chapter 6. Problemes
 description: 
 ---
-# Chapitre 6 : Electromechanical systems modelling using energy approaches    
+# Chapter 6 : Electromechanical systems modelling using energy approaches    
   
  
  
