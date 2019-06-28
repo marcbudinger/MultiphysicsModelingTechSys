@@ -2,7 +2,7 @@
 title: Chapter 2. Exercices
 description: 
 ---
-# Chapter 2 : Fundamental Concepts of Multi-Physics Modelling with Lumped Parameters   
+# Chapter 2 : Fundamental concepts of lumped parameter-based multi-physics modeling   
   
  
 ## 5.1. Review of Kirchhoff's laws in multi-domain modeling

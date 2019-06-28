@@ -2,7 +2,7 @@
 title: Chapter 6. Problemes
 description: 
 ---
-# Chapter 6 : Electromechanical systems modelling using energy approaches    
+# Chapter 6 : Mechanical and electrochemical power transmissions
   
  
  

@@ -78,4 +78,7 @@ function fixLink(siteurl) {
 	}
 }
 
+$(document).ready(function(){
+    $('p').has('img').css('text-align','center');
+})
 
