@@ -45,14 +45,52 @@ $(document).ready(function(){
         time: 1000
     });
 
+  $('p').has('img').css('text-align','center');
+	
+	
+	
+	
 
+var coll = document.getElementsByClassName("expand");
+
+
+
+for (var i = 0; i < coll.length; i++) { 
+	var button = document.createElement("button");
+	button.innerHTML = "+";
+	button.className = "collapsible";
+	coll[i].appendChild(button);
+	
+	var content = document.createElement('div');
+	content.className = "content";
+	coll[i].parentNode.insertBefore(content,coll[i].nextSibling);
+	var elmt = content.nextElementSibling;
+	while(elmt != null && elmt.tagName != "H2"){
+		content.appendChild(elmt);
+		elmt =  content.nextElementSibling;
+	}
+	
+	coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+	
+	var content = this.nextElementSibling ;
+	var button =  this.lastChild;
+   if (content.style.maxHeight){
+      content.style.maxHeight = null;
+	  button.innerHTML = "+";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+	  	 button.innerHTML = "−";
+    } 
+   
+  });
+}
+	
 }
 
 
 );
-
-
-function fixLink(siteurl) {
+function fixLink(siteurl){
 	var imgtag = document.getElementsByTagName("img");
 	for(var i =0; i< imgtag.length;i++)
 	{
@@ -78,7 +116,6 @@ function fixLink(siteurl) {
 	}
 }
 
-$(document).ready(function(){
-    $('p').has('img').css('text-align','center');
-})
+
+
 

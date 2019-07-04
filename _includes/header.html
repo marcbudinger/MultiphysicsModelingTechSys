@@ -20,7 +20,7 @@
 				<div class="navbar-brand"><a href="{{site.baseurl}}/fr">FR</a> / <a href="{{site.baseurl}}/en">EN</a></div>	
 				{% else %}
 					{% if sub.first == "_correctionsen" %}
-					<div class="navbar-brand"><a href="{{site.baseurl}}{{page.url | replace:"correctionsen/Chapiter","correctionsfr/Chapitre"}}">FR</a> / <span>EN</span></div>	
+					<div class="navbar-brand"><a href="{{site.baseurl}}{{page.url | replace:"correctionsen/Chapter","correctionsfr/Chapitre"}}">FR</a> / <span>EN</span></div>	
 					{% else %}
 					<div class="navbar-brand"><a href="{{site.baseurl}}{{page.url | replace:"/en","/fr"}}">FR</a> / <span>EN</span></div>	
 				
@@ -29,7 +29,7 @@
 			{% endif %}
 			{% if page.lang == "fr" %}
 				{% if sub.first == "_correctionsfr" %}
-					<div class="navbar-brand"><span>FR</span>/ <a href="{{site.baseurl}}{{page.url | replace:"correctionsfr/Chapitre","correctionsen/Chapiter"}}">EN</a></div>	
+					<div class="navbar-brand"><span>FR</span>/ <a href="{{site.baseurl}}{{page.url | replace:"correctionsfr/Chapitre","correctionsen/Chapter"}}">EN</a></div>	
 				{% else %}
 				<div class="navbar-brand"><span>FR</span> / <a href="{{site.baseurl}}{{page.url | replace:"/fr","/en"}}">EN</a></div>
 				{% endif %}

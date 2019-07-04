@@ -76,6 +76,10 @@ margin-top : 30px;
     margin-right: auto;
     margin-top: 20px;
 }
+#accueil-img2{
+    display: block;
+   padding-top : 0;
+}
 #intro {
     padding: 50px 0;
 
